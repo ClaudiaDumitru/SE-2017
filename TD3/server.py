@@ -40,7 +40,7 @@ def chat_server():
 
                 print("Connection de client avec IP %s" % str(addr))
 
-                broadcast(serversocket, clientsocket, "[%s:%s] est entre dans le salon de discussion\n" % addr)
+                broadcast(serversocket, clientsocket, "[%s:%s] est entre dans la salle de discussion\n" % addr)
             else:
                 try:
                     data = sock.recv(recvbuffer)
